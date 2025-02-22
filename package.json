@@ -1,6 +1,5 @@
 {
-  "name": "hellojobclone",
-  "private": true,
+  "name": "boiler-plate-for-react",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
