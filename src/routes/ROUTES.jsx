@@ -1,5 +1,5 @@
-import MainPage from "../pages/index.jsx";
-import HomePage from "../pages/HomePage/index.jsx";
+import MainPage from "../pages/UserPages/index.jsx";
+import HomePage from "../pages/UserPages/HomePage/index.jsx";
 
 export const ROUTES = [
     {
