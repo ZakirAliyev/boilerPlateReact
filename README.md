@@ -1,71 +1,85 @@
+# 🚀 React 19 Boilerplate
+
+A modern and lightweight boilerplate built with **React 19**, **Redux Toolkit**, **React Router v7**, and **Vite**. Designed to kickstart your project with a solid foundation and optimized development workflow.
+
+🔗 **GitHub Repository:** [ZakirAliyev/boilerPlateReact](https://github.com/ZakirAliyev/boilerPlateReact)
+
 ---
 
-# 🚀 React Boilerplate
+## ✨ Features
 
-This repository provides a **modern boilerplate** built using **React 19, Redux Toolkit, React Router 7, and Vite**. It is designed to accelerate development and ensure consistency across projects.
+- ⚛️ **React 19** – The latest version of React with improved performance and new features.
+- 🎯 **Redux Toolkit** – Simplified and scalable state management.
+- 🧭 **React Router v7** – Declarative and flexible routing for SPA.
+- ⚡ **Vite** – Super-fast build tool with HMR and optimized performance.
+- 🎨 **Sass** – Maintainable and powerful CSS preprocessor.
+- 🔍 **ESLint** – Ensures clean and consistent code.
 
-🔗 **Repository:** [BoilerplateReact](https://github.com/ZakirAliyev/boilerPlateReact)
+---
 
-## ✨ Key Features
+## 📦 Core Dependencies
 
-- **⚡ React 19** – Leverage the latest version of React for optimal performance and features.
-- **🔀 Redux Toolkit** – Simplifies state management with a powerful and efficient approach.
-- **🚏 React Router 7** – Provides a flexible and declarative routing solution.
-- **🛠️ Vite** – Ensures a fast development experience with rapid builds and hot module replacement.
-- **🎨 Sass** – Enables advanced styling capabilities with a structured approach.
-- **🔍 ESLint** – Enhances code quality by enforcing best practices and standards.
+| Package                | Version    | Description                                 |
+|------------------------|------------|---------------------------------------------|
+| `react`               | ^19.0.0    | Core React library                          |
+| `react-dom`           | ^19.0.0    | React DOM renderer                          |
+| `@reduxjs/toolkit`    | ^2.5.1     | State management abstraction                |
+| `react-redux`         | ^9.2.0     | React bindings for Redux                    |
+| `react-router`        | ^7.2.0     | Routing core                                |
+| `react-router-dom`    | ^7.2.0     | DOM bindings for routing                    |
+| `js-cookie`           | ^3.0.5     | Simple API for cookie management            |
+| `react-icons`         | ^5.5.0     | Popular icon packs as React components      |
+| `sass`                | ^1.85.0    | CSS preprocessor                            |
 
-## 📦 Dependencies Overview
+---
 
-The boilerplate includes several essential libraries to streamline development:
+## 🚀 Getting Started
 
-- **@reduxjs/toolkit (^2.5.1)** – A modern approach to state management with Redux.
-- **js-cookie (^3.0.5)** – Manage cookies effortlessly for handling user sessions or preferences.
-- **react (^19.0.0)** – The latest React version ensuring improved performance and new features.
-- **react-dom (^19.0.0)** – Required for rendering React components in the DOM.
-- **react-icons (^5.5.0)** – A vast collection of icons for UI enhancement.
-- **react-redux (^9.2.0)** – Official React bindings for Redux, providing seamless integration.
-- **react-router (^7.2.0)** – Core package for implementing dynamic routing.
-- **react-router-dom (^7.2.0)** – Facilitates declarative routing in web applications.
-- **sass (^1.85.0)** – A powerful CSS preprocessor for better maintainability and styling structure.
+### 1. Clone the repository
 
-## 📂 Installation & Usage
+```bash
+git clone https://github.com/ZakirAliyev/boilerPlateReact.git
+cd boilerPlateReact
+```
 
-Follow these steps to set up and start using the boilerplate:
+### 2. Install dependencies
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/ZakirAliyev/boilerPlateReact.git
-   cd boilerPlateReact
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the development server:
-   ```sh
-   npm run dev
-   ```
-4. Open your browser and navigate to **http://localhost:5173**
+```bash
+npm install
+```
 
-## 🚀 Deployment
+### 3. Start the development server
 
-To create an optimized production build:
-```sh
+```bash
+npm run dev
+```
+
+Open your browser and navigate to: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🛠 Deployment
+
+To create a production-ready build:
+
+```bash
 npm run build
 ```
-This command generates a **dist** folder containing the production-ready version of your application.
 
-## 🎯 Code Quality & Linting
-
-To analyze your code and enforce best practices:
-```sh
-npm run lint
-```
-This command runs **ESLint** to identify and fix potential code quality issues.
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
+The output will be generated in the `dist/` folder.
 
 ---
+
+## ✅ Code Quality & Linting
+
+Run ESLint to check for issues:
+
+```bash
+npm run lint
+```
+
+---
+
+## 📄 License
+
+Licensed under the [MIT License](LICENSE).
