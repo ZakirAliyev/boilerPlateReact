@@ -1,0 +1,175 @@
+#servicesGrid {
+  padding: 50px 0;
+
+  .servicesText {
+    text-align: center;
+    font-size: 220px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    background: linear-gradient(
+                    180deg,
+                    #D9D9D9 0%,
+                    #ECECEC 30%,
+                    rgba(255, 255, 255, 0.6) 80%,
+                    rgba(255, 255, 255, 0) 100%
+    );
+
+    -webkit-background-clip: text; /* Safari və Chrome */
+    background-clip: text; /* Digər browserlər */
+    color: transparent; /* Text rəngini şəffaf edir */
+    line-height: 1; /* Yazını sıx göstərmək üçün */
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: -60px;
+  }
+
+  .div {
+    padding: 32px;
+    color: white;
+    text-align: center;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    p {
+      max-width: 360px;
+      width: 100%;
+      font-size: 14px;
+      margin: 8px auto 0;
+    }
+  }
+
+  .divdiv {
+    padding: 32px;
+    color: #000000;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    p {
+      max-width: 360px;
+      width: 100%;
+      font-size: 14px;
+      margin: 8px 0 0;
+    }
+  }
+
+  .divdivdiv {
+    padding: 32px;
+    color: #ffffff;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    p {
+      max-width: 360px;
+      width: 100%;
+      font-size: 14px;
+      margin: 8px 0 0;
+    }
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 4 / 3;
+    background: #10317F;
+  }
+
+  .div2 {
+    grid-area: 1 / 3 / 2 / 7;
+    background: #D2DEF9;
+  }
+
+  .div3 {
+    grid-area: 2 / 3 / 4 / 5;
+    background: #D2DEF9;
+  }
+
+  .div4 {
+    grid-area: 2 / 5 / 4 / 7;
+    background: #10317F;
+  }
+
+  .div5 {
+    grid-area: 4 / 1 / 5 / 4;
+    background: #527FE9;
+  }
+
+  .div6 {
+    grid-area: 4 / 4 / 5 / 7;
+    background: #D2DEF9;
+  }
+
+  .div7 {
+    grid-area: 5 / 1 / 7 / 3;
+    background: #10317F;
+  }
+
+  .div8 {
+    grid-area: 5 / 3 / 7 / 5;
+    background: #D2DEF9;
+  }
+
+  .div9 {
+    grid-area: 5 / 5 / 7 / 7;
+    background: #527FE9;
+  }
+
+  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9 {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    min-height: 205px;
+  }
+
+  // Kvadrat olanlar
+  .div3,
+  .div4,
+  .div7,
+  .div8,
+  .div9 {
+    aspect-ratio: 1 / 1;
+    min-height: auto; // artıq lazım deyil
+  }
+
+  // Mobil uyğunlaşma
+  @media (max-width: 768px) {
+    .parent {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+
+    .div1,
+    .div2,
+    .div5,
+    .div6 {
+      grid-area: unset;
+      min-height: 150px;
+    }
+
+    .div3,
+    .div4,
+    .div7,
+    .div8,
+    .div9 {
+      grid-area: unset;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .parent {
+      grid-template-columns: 1fr;
+    }
+  }
+}
