@@ -82,4 +82,4 @@ npm run lint
 
 ## 📄 License
 
-Licensed under the [MIT License](LICENSE).
+Licensed under the [MIT License](LICENSE).# BuyonTech.net

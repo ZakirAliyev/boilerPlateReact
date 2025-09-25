@@ -1,0 +1,86 @@
+#homeBanner {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 12px 0;
+  margin-top: 84px;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 55px;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 24px;
+    background: #418AEA;
+    border-radius: 36px;
+    background: url("/src/assets/network.png"),
+    linear-gradient(135.65deg, #3EB7E8 25.15%, #4277EA 50%, #4D67E8 74.85%);
+    height: 60dvh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media screen and (max-width: 992px) {
+      background: url("/src/assets/network1.png"),
+      linear-gradient(135.65deg, #3EB7E8 25.15%, #4277EA 50%, #4D67E8 74.85%);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    h2, p {
+      max-width: 700px;
+      width: 100%;
+      margin: 0 auto;
+      color: var(--bg-color);
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 56px;
+
+      @media screen and (max-width: 992px) {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+
+      @media screen and (max-width: 992px) {
+        font-size: 12px;
+        padding: 0 16px;
+      }
+    }
+
+    button {
+      padding: 0 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      border: none;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      height: 40px;
+      font-size: 16px;
+      margin-top: 10px;
+
+      @media screen and (max-width: 992px) {
+        font-size: 12px;
+      }
+
+      &:hover {
+        background-color: var(--hover-color);
+      }
+    }
+  }
+}

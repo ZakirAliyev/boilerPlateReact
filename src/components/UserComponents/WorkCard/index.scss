@@ -1,0 +1,71 @@
+#faq {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 50px 0;
+
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    max-width: 350px;
+    width: 100%;
+    color: var(--text-color-secondary);
+
+    @media screen and (max-width: 992px){
+      font-size: 30px;
+    }
+  }
+
+  .accordion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    cursor: pointer;
+
+    h3 {
+      font-weight: 500;
+      font-size: 24px;
+      color: var(--accordion-text-color);
+
+      @media screen and (max-width: 992px){
+        font-size: 18px;
+      }
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      margin: 0;
+      color: var(--accordion-text-color-secondary);
+      font-weight: 300;
+      transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+
+        @media screen and (max-width: 992px){
+          font-size: 14px;
+        }
+      }
+    }
+
+    .icon {
+      color: var(--accordion-text-color);
+      flex-shrink: 0;
+      margin-left: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    &.open .icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  .line {
+    height: 1px;
+    background: var(--line-color);
+    margin: 32px 0;
+  }
+}
