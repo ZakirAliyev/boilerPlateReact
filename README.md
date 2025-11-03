@@ -83,3 +83,4 @@ npm run lint
 ## 📄 License
 
 Licensed under the [MIT License](LICENSE).# BuyonTech.net
+# qynetic.space
