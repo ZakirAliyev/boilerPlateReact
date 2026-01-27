@@ -16,10 +16,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
   transition: background-color 0.2s ease, color 0.2s ease;
-  padding: 0 8px;
 }
 
 button, a, .link {
